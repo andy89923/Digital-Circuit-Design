@@ -7,8 +7,9 @@ module	t_Simple_Circuit();
 	
 	//apply inputs one at a time
 	initial	begin
-		$dumpfile("test.vcd");
+		$dumpfile("Simple_Circuit.vcd");
     	$dumpvars;
+    	
 		A=1'b0; B=1'b0; C=1'b0;
 		#100 A=1'b1; B=1'b1; C=1'b1; 
 	end
