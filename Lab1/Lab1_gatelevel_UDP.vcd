@@ -1,0 +1,129 @@
+$date
+	Mon May  4 11:00:57 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab1_gatelevel $end
+$var wire 1 ! F $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var reg 1 $ C $end
+$var reg 1 % D $end
+$scope module M1 $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 $ C $end
+$var wire 1 % D $end
+$var wire 1 ! F $end
+$var wire 1 & K $end
+$var wire 1 ' andCD $end
+$var wire 1 ( negA $end
+$var wire 1 ) negB $end
+$var wire 1 * negD $end
+$var wire 1 + orACD $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1+
+1*
+1)
+1(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#50
+0*
+1%
+#100
+1!
+1*
+1&
+0%
+1$
+#150
+0*
+1'
+1%
+#200
+0!
+1*
+0&
+0'
+0)
+0%
+0$
+1#
+#250
+0*
+1%
+#300
+1*
+0%
+1$
+#350
+0*
+1'
+1%
+#400
+1&
+0+
+1*
+0'
+1)
+0(
+0%
+0$
+0#
+1"
+#450
+0&
+0*
+1%
+#500
+1*
+1&
+0%
+1$
+#550
+1!
+1+
+0*
+1'
+1%
+#600
+0!
+0+
+1*
+1&
+0'
+0)
+0%
+0$
+1#
+#650
+0&
+0*
+1%
+#700
+1&
+1*
+0%
+1$
+#750
+0&
+1+
+0*
+1'
+1%
+#800
