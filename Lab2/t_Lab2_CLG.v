@@ -12,7 +12,9 @@ module t_Lab2_CLG;
 	initial begin
 		// $dumpfile("Lab2_CLG_gate.vcd");
 		// $dumpfile("Lab2_CLG_dataflow.vcd");
-		// $dumpfile("Lab2_CLG_behavior.vcd");
+		$dumpfile("Lab2_CLG_behavior.vcd");
+		$dumpvars;
+		
 			P = 4'b1101; G = 4'b0101; C0 = 1'b0; 
 		#50 P = 4'b1100; G = 4'b1000; C0 = 1'b1;
 		
