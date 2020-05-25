@@ -1,18 +1,15 @@
-module Lab2_Excess_3_adder_behavior (Sum, Cout, A, B, Cin);
+module Lab2_Excess_3_adder_behavior(Sum, Cout, A, B, Cin);
 	
 	output reg [3:0] Sum;
-	output reg Cout;
+	output Cout;
 	
 	input [3:0] A, B;
 	input Cin;
 
 	reg t = 4'b0011;
-	reg [3:0] tmp;
+	wire [3:0] tmp;
 
-	always @(*) begin
-		tmp = A + B;
-		Cout = Cin;
-	end
+	Lab2_4_bit_CLA M(tmp, Cout, A, B, Cin);
 
 	always @(*) begin
 		if (Cout == 0) Sum = tmp - 4'b0011;
