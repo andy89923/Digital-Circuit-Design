@@ -11,8 +11,8 @@ module t_Lab2_Excess_3_adder_behavior;
 	initial #300 $finish;
 
 	initial begin
-		$dumpfile("Lab2_Excess_3_adder_behavior.vcd");
-		$dumpvars;
+		// $dumpfile("Lab2_Excess_3_adder_behavior.vcd");
+		// $dumpvars;
 		
 			A = 4'b0011; B = 4'b0011; Cin = 1'b0;
 		#50 A = 4'b0011; B = 4'b0011; Cin = 1'b1;

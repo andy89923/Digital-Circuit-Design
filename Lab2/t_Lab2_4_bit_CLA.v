@@ -10,8 +10,8 @@ module t_Lab2_4_bit_CLA;
 	initial #400 $finish;
 
 	initial begin
-		$dumpfile("Lab2_4_bit_CLA.vcd");
-		$dumpvars;
+		// $dumpfile("Lab2_4_bit_CLA.vcd");
+		// $dumpvars;
 		
 			A = 4'b1101; B = 4'b0101; Cin = 1'b0;
 		#50 A = 4'b1100; B = 4'b1000; Cin = 1'b1;
