@@ -1,0 +1,66 @@
+$date
+	Sun Jun 14 10:58:38 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab3_SR_Latch_gatelevel $end
+$var wire 1 ! Q $end
+$var wire 1 " NQ $end
+$var reg 1 # R $end
+$var reg 1 $ S $end
+$scope module M $end
+$var wire 1 " NQ $end
+$var wire 1 ! Q $end
+$var wire 1 # R $end
+$var wire 1 $ S $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1$
+0#
+x"
+x!
+$end
+#2
+0"
+#4
+1!
+#10
+0$
+#20
+1#
+#22
+0!
+#24
+1"
+#30
+0#
+#50
+1#
+1$
+#52
+0"
+#60
+0#
+0$
+#62
+1!
+1"
+#64
+0"
+0!
+#66
+1!
+1"
+#68
+0"
+0!
+#70
+1!
+1"

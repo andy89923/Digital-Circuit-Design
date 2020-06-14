@@ -1,0 +1,80 @@
+#! /usr/local/Cellar/icarus-verilog/10.3/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fac96d00110 .scope module, "t_Lab3_SR_Latch_gatelevel" "t_Lab3_SR_Latch_gatelevel" 2 1;
+ .timescale 0 0;
+v0x7fac96d163d0_0 .net "NQ", 0 0, L_0x7fac96d16830;  1 drivers
+v0x7fac96d16470_0 .net "Q", 0 0, L_0x7fac96d166a0;  1 drivers
+v0x7fac96d16520_0 .var "R", 0 0;
+v0x7fac96d165f0_0 .var "S", 0 0;
+S_0x7fac96d06200 .scope module, "M" "Lab3_SR_Latch_gatelevel" 2 5, 3 1 0, S_0x7fac96d00110;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "Q"
+    .port_info 1 /OUTPUT 1 "NQ"
+    .port_info 2 /INPUT 1 "S"
+    .port_info 3 /INPUT 1 "R"
+L_0x7fac96d166a0/d .functor NOR 1, v0x7fac96d16520_0, L_0x7fac96d16830, C4<0>, C4<0>;
+L_0x7fac96d166a0 .delay 1 (2,2,2) L_0x7fac96d166a0/d;
+L_0x7fac96d16830/d .functor NOR 1, v0x7fac96d165f0_0, L_0x7fac96d166a0, C4<0>, C4<0>;
+L_0x7fac96d16830 .delay 1 (2,2,2) L_0x7fac96d16830/d;
+v0x7fac96d01090_0 .net "NQ", 0 0, L_0x7fac96d16830;  alias, 1 drivers
+v0x7fac96d16180_0 .net "Q", 0 0, L_0x7fac96d166a0;  alias, 1 drivers
+v0x7fac96d16220_0 .net "R", 0 0, v0x7fac96d16520_0;  1 drivers
+v0x7fac96d162d0_0 .net "S", 0 0, v0x7fac96d165f0_0;  1 drivers
+    .scope S_0x7fac96d00110;
+T_0 ;
+    %delay 70, 0;
+    %vpi_call 2 7 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fac96d00110;
+T_1 ;
+    %vpi_call 2 9 "$dumpfile", "SR_Latch_gatelevel.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fac96d165f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d16520_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d165f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d16520_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d165f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fac96d16520_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d165f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d16520_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d165f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d16520_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fac96d165f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fac96d16520_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d165f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fac96d16520_0, 0, 1;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "t_Lab3_SR_Latch_gatelevel.v";
+    "Lab3_SR_Latch_gatelevel.v";
