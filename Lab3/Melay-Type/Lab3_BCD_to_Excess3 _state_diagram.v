@@ -9,15 +9,15 @@ module Lab3_BCD_to_Excess3_state_diagram(output reg z, input x, clock, reset);
 		if (reset == 1'b0) now_state <= S0;
 		else now_state <= nxt_state;
 
-	always @(now_state, x)
+	always @(*)
 		case (now_state)
 			S0: if (x) nxt_state = S2; else nxt_state = S1;
 			S1: if (x) nxt_state = S4; else nxt_state = S3;
-			S2: nxt_state = S4;
-			S3: nxt_state = S5;
+			S2: if (x) nxt_state = S4; else nxt_state = S4;
+			S3: if (x) nxt_state = S5; else nxt_state = S5;
 			S4: if (x) nxt_state = S6; else nxt_state = S5;
-			S5: nxt_state = S0;
-			S6: nxt_state = S0;
+			S5: if (x) nxt_state = S0; else nxt_state = S0;
+			S6: if (x) nxt_state = S0; else nxt_state = S0;
 		endcase
 
 	always @(now_state, x)
